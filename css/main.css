@@ -1,4 +1,4 @@
-.body{
+.body {
 	width: 100vw;
 	height: 200vh;
 }
@@ -67,4 +67,12 @@
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 6rem;
+}
+
+#bg-mc {
+	background: url("../images/bg-mc.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
