@@ -1,11 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+	
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>MaskotteG4</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="favicon" type="image/x-icon" href="images/favicon.ico">
+		<title>Mascotte | G4</title>
+		
+		<!-- Mascotte JS -->
 		<script type="text/javascript" src="js/2dskin.js"></script>
 		<script type="text/javascript" src="plugins/three/three.min.js"></script>
-		
+				
+		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/main.css">
 		
 		<!-- Libraries CSS -->
@@ -14,36 +19,71 @@
 	</head>
 
 	<body>
-		<canvas id="canvas" width="64" height="64"></canvas>
+		<header class="vh-100">
+			
+			<!--Navbar -->
+			<nav class="navbar navbar-expand-lg scrolling-navbar navbar-dark z-depth-0 fixed-top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo-g4.png" alt="mdb logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Site internet">
+							<a class="nav-link material-tooltip-main" href="https://www.institut-g4.fr/" target="_blank">
+							<i class="fas fa-home"></i>
+							</a>
+						</li>
+						<li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="GitHub">
+							<a class="nav-link material-tooltip-main" href="https://github.com/pac421/cercle_de_projet" target="_blank">
+							<i class="fab fa-github"></i>
+							</a>
+						</li>
+						<li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+							<a class="nav-link material-tooltip-main" href="https://www.facebook.com/InstitutG4/" target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Instagram">
+							<a class="nav-link material-tooltip-main" href="https://www.instagram.com/institut_g4/" target="_blank">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- /Navbar -->
+			
+			<!-- First section -->
+			<section class="view vh-100">
+				<div class="row vh-100">
+					<div class="col-md-6">
+						<div class="d-flex flex-column justify-content-center align-items-start h-100">
+							<h1 class="heading">Nom de la mascotte</h1>
+							<h4 class="subheading font-weight-bold">Dans le cadre des cercles de projet, le groupe n°3 a l'honneur de vous présenter la nouvelle mascotte de l'institut G4 !</h4>
+							<div class="mr-auto">
+								<button type="button" class="btn btn-lily btn-margin btn-rounded">Découvrir <i class="fas fa-caret-right ml-3"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="view vh-100">
+							<div class="mask flex-center hm-gradient" id="model"></div>
+							<canvas id="canvas" width="64" height="64"></canvas>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /First section -->
+			
+		</header>
 		
-		<div id="sidebar">
-			<strong>Username</strong>
-			<input id="username" type="text" value="earthiverse">
-
-			<strong>Toggle Visibility - Body Parts</strong>
-			<label><input id="headToggle" type="checkbox" checked>Head</label>
-			<label><input id="bodyToggle" type="checkbox" checked>Body</label>
-			<label><input id="leftArmToggle" type="checkbox" checked>Left Arm</label>
-			<label><input id="rightArmToggle" type="checkbox" checked>Right Arm</label>
-			<label><input id="leftLegToggle" type="checkbox" checked>Left Leg</label>
-			<label><input id="rightLegToggle" type="checkbox" checked>Right Leg</label>
-
-			<strong>Toggle Visibility - Secondary Layer</strong>
-			<label><input id="head2Toggle" type="checkbox" checked>Head</label>
-			<label><input id="body2Toggle" type="checkbox" checked>Body</label>
-			<label><input id="leftArm2Toggle" type="checkbox" checked>Left Arm</label>
-			<label><input id="rightArm2Toggle" type="checkbox" checked>Right Arm</label>
-			<label><input id="leftLeg2Toggle" type="checkbox" checked>Left Leg</label>
-			<label><input id="rightLeg2Toggle" type="checkbox" checked>Right Leg</label>
-		</div>
+		<!-- Mascotte JS -->
+		<script type="text/javascript" src="js/skin.js"></script>
 		
-		<div id="model"></div>
-		
-		<div id="info">
-			3D Skin Viewer v2 by <a href="https://github.com/earthiverse/3D-Minecraft-Skin-Viewer">earthiverse</a><br />
-			Skins downloaded from <a href="https://crafatar.com/">Crafatar</a>
-		</div>
-		
+		<!-- Custom JS -->
 		<script type="text/javascript" src="js/main.js"></script>
 		
 		<!-- Libraries JS -->
