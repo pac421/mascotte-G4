@@ -19,11 +19,11 @@
 	</head>
 
 	<body>
-		<header class="vh-100 w-100">
+		<header id="header-div" class="vh-100">
 			
 			<!--Navbar -->
-			<nav class="navbar navbar-expand-lg scrolling-navbar navbar-dark z-depth-0 fixed-top">
-				<a class="navbar-brand" href="#">
+			<nav class="navbar navbar-expand-lg scrolling-navbar navbar-dark z-depth-0 fixed-top smooth-scroll">
+				<a class="navbar-brand" href="#header-div">
 					<img src="images/logo-g4.png" alt="mdb logo">
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,12 +32,12 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="https://www.institut-g4.fr/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Site internet">
+							<a class="nav-link" href="https://www.institut-g4.fr/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Site web">
 								<i class="fas fa-home"></i>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://github.com/pac421/cercle_de_projet" target="_blank" data-toggle="tooltip" data-placement="bottom" title="GitHub">
+							<a class="nav-link" href="https://github.com/pac421/cercle_de_projet" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github">
 								<i class="fab fa-github"></i>
 							</a>
 						</li>
@@ -63,8 +63,8 @@
 						<div class="d-flex flex-column justify-content-center align-items-start h-100">
 							<h1 class="heading">Nom de la mascotte</h1>
 							<h4 class="subheading font-weight-bold">Dans le cadre des cercles de projet, le groupe n°3 a l'honneur de vous présenter la nouvelle mascotte de l'institut G4 !</h4>
-							<div class="mr-auto">
-								<button type="button" class="btn btn-lily btn-margin btn-rounded">Découvrir <i class="fas fa-caret-right ml-3"></i></button>
+							<div class="mr-auto smooth-scroll">
+								<a type="button" class="btn btn-lily btn-margin btn-rounded" href="#bg-mc">Découvrir <i class="fas fa-caret-right ml-3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -80,8 +80,8 @@
 			
 		</header>
 		
-		<article id="bg-mc" class="vh-100 w-100">
-		
+		<article id="bg-mc" class="vh-100">
+			
 		</article>
 		
 		<!-- Mascotte JS -->
