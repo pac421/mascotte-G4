@@ -1,22 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="favicon" type="image/x-icon" href="../assets/pics/favicon.ico">
-        <title>CercleDeProjet</title>
-
-        <!-- Libraries CSS -->
-        <link rel="stylesheet" href="plugins/bootstrap/5.0.0/css/bootstrap.min.css">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>MaskotteG4</title>
+		<script type="text/javascript" src="js/2dskin.js"></script>
+		<script type="text/javascript" src="plugins/three/three.min.js"></script>
+		
+		<link rel="stylesheet" href="css/main.css">
+		
+		<!-- Libraries CSS -->
 		<link rel="stylesheet" href="plugins/mdb/4.11.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="plugins/mdb/4.11.0/css/mdb.min.css">
-		<link rel="stylesheet" href="plugins/mdb/4.11.0/css/style.css">
+	</head>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-		Hello world !
+	<body>
+		<canvas id="canvas" width="64" height="64"></canvas>
+		
+		<div id="sidebar">
+			<strong>Username</strong>
+			<input id="username" type="text" value="earthiverse">
+
+			<strong>Toggle Visibility - Body Parts</strong>
+			<label><input id="headToggle" type="checkbox" checked>Head</label>
+			<label><input id="bodyToggle" type="checkbox" checked>Body</label>
+			<label><input id="leftArmToggle" type="checkbox" checked>Left Arm</label>
+			<label><input id="rightArmToggle" type="checkbox" checked>Right Arm</label>
+			<label><input id="leftLegToggle" type="checkbox" checked>Left Leg</label>
+			<label><input id="rightLegToggle" type="checkbox" checked>Right Leg</label>
+
+			<strong>Toggle Visibility - Secondary Layer</strong>
+			<label><input id="head2Toggle" type="checkbox" checked>Head</label>
+			<label><input id="body2Toggle" type="checkbox" checked>Body</label>
+			<label><input id="leftArm2Toggle" type="checkbox" checked>Left Arm</label>
+			<label><input id="rightArm2Toggle" type="checkbox" checked>Right Arm</label>
+			<label><input id="leftLeg2Toggle" type="checkbox" checked>Left Leg</label>
+			<label><input id="rightLeg2Toggle" type="checkbox" checked>Right Leg</label>
+		</div>
+		
+		<div id="model"></div>
+		
+		<div id="info">
+			3D Skin Viewer v2 by <a href="https://github.com/earthiverse/3D-Minecraft-Skin-Viewer">earthiverse</a><br />
+			Skins downloaded from <a href="https://crafatar.com/">Crafatar</a>
+		</div>
+		
+		<script type="text/javascript" src="js/main.js"></script>
 		
 		<!-- Libraries JS -->
 		<script type="text/javascript" src="plugins/jquery/3.5.1/js/jquery.min.js"></script>
@@ -25,8 +53,5 @@
 		<script type="text/javascript" src="plugins/mdb/4.11.0/js/popper.min.js"></script>
 		<script type="text/javascript" src="plugins/mdb/4.11.0/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="plugins/mdb/4.11.0/js/mdb.min.js"></script>
-
-        <!-- Custom JS -->
-        <script src="js/main.js"></script>
-    </body>
+	</body>
 </html>
