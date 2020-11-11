@@ -1,7 +1,7 @@
 body {
 	width: 100%;
-	height: 200vh;
-	overflow: hidden;
+	height: 400vh;
+	overflow: hidden; 
 }
 
 #model {
@@ -19,20 +19,20 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(40deg, rgba(0, 51, 199, .3), rgba(209, 149, 249, .3));
+	/*background-image: linear-gradient(to right, #ff817760 0%, #ff867a60 0%, #ff8c7f60 21%, #f9918560 52%, #cf556c60 78%, #b12a5b60 100%);*/
 }
 
-.navbar:not(.top-nav-collapse) {
+.navbar:not(.top-nav-collapse){
   background: transparent;
+}
+
+.nav-link{
+	color: #c3c3c3 !important;
 }
 
 .navbar .navbar-brand img {
   height: 40px;
   margin: 10px;
-}
-
-.hm-gradient {
-  background: linear-gradient(40deg, rgba(0, 51, 199, .3), rgba(209, 149, 249, .3));
 }
 
 .heading {
@@ -70,10 +70,65 @@ body {
   margin-bottom: 6rem;
 }
 
-#bg-mc {
-	background: url("../images/bg-mc.png") no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+#btn-discover {
+	background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 100%);
 }
+
+#page-slider {
+	height: 300vh;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+.img-comp-container {
+  position: relative;
+  width: 900px;
+  height: 600px;
+
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(120deg,#fdfbfb 0,#ebedee 100%);
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.scrollbar {
+	float: left;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.scrollbar-primary::-webkit-scrollbar {
+	width: 8px;
+	background-color: #F5F5F5;
+}
+.scrollbar-primary::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+	background-color: #4285F4;
+}
+.scrollbar-primary {
+	scrollbar-color: #4285F4 #F5F5F5;
+}
+

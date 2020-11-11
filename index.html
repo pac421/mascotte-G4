@@ -33,7 +33,7 @@
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
 							<a class="nav-link" href="https://www.institut-g4.fr/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Site web">
-								<i class="fas fa-home"></i>
+								<i class="fas fa-link"></i>
 							</a>
 						</li>
 						<li class="nav-item">
@@ -61,16 +61,16 @@
 				<div class="row vh-100">
 					<div class="col-md-6">
 						<div class="d-flex flex-column justify-content-center align-items-start h-100">
-							<h1 class="heading">Nom de la mascotte</h1>
+							<h1 class="heading">Nom de mascotte</h1>
 							<h4 class="subheading font-weight-bold">Dans le cadre des cercles de projet, le groupe n°3 a l'honneur de vous présenter la nouvelle mascotte de l'institut G4 !</h4>
 							<div class="mr-auto smooth-scroll">
-								<a type="button" class="btn btn-lily btn-margin btn-rounded" href="#bg-mc">Découvrir <i class="fas fa-caret-right ml-3"></i></a>
+								<a type="button" class="btn btn-margin btn-rounded text-white" id="btn-discover" href="#bg-mc">Découvrir <i class="fas fa-caret-right ml-3"></i></a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="view vh-100">
-							<div class="mask flex-center hm-gradient" id="model"></div>
+							<div class="mask flex-center hm-gradient young-passion-gradient" id="model"></div>
 							<canvas id="canvas" width="64" height="64"></canvas>
 						</div>
 					</div>
@@ -80,9 +80,20 @@
 			
 		</header>
 		
-		<article id="bg-mc" class="vh-100">
-			
-		</article>
+		<div id="page-slider" class="scrollbar scrollbar-primary w-100">
+			<div id="bg-mc" class="container d-flex justify-content-center align-items-center vh-100">
+				<div class="img-comp-container z-depth-4">
+					<div class="img-comp-img">
+						<img src="images/sliders/slider1-1.jpg" width="900" height="600">
+					</div>
+					<div class="img-comp-img img-comp-overlay">
+						<img src="images/sliders/slider1-2.png" width="900" height="600">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
 		
 		<!-- Mascotte JS -->
 		<script type="text/javascript" src="js/skin.js"></script>
