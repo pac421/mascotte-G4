@@ -801,6 +801,8 @@ function Animate() {
 
 // Handle the sidebar input things
 // Make checkboxes toggle visibility
+
+/*
 headToggle = document.getElementById('headToggle');
 headToggle.addEventListener("change", toggleHead, false);
 
@@ -887,3 +889,4 @@ function toggleRightLeg2() {
   var rightLeg2 = scene.getObjectByName("rightLeg2", false);
   rightLeg2.visible = rightLeg2Toggle.checked;
 }
+*/

@@ -18,13 +18,13 @@
 		<link rel="stylesheet" href="plugins/mdb/4.11.0/css/mdb.min.css">
 	</head>
 
-	<body>
+	<body id='body'>
 		<header id="header-div" class="vh-100">
 			
 			<!--Navbar -->
 			<nav class="navbar navbar-expand-lg scrolling-navbar navbar-dark z-depth-0 fixed-top smooth-scroll">
-				<a class="navbar-brand" href="#header-div">
-					<img src="images/logo-g4.png" alt="mdb logo">
+				<a class="navbar-brand">
+					<img src="images/logo-g4.png" alt="Logo G4">
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -64,7 +64,7 @@
 							<h1 class="heading">Nom de mascotte</h1>
 							<h4 class="subheading font-weight-bold">Dans le cadre des cercles de projet, le groupe n°3 a l'honneur de vous présenter la nouvelle mascotte de l'institut G4 !</h4>
 							<div class="mr-auto smooth-scroll">
-								<a type="button" class="btn btn-margin btn-rounded text-white" id="btn-discover" href="#bg-mc">Découvrir <i class="fas fa-caret-right ml-3"></i></a>
+								<a type="button" class="btn btn-margin btn-rounded text-white" id="btn-discover" href="#first-slider">Découvrir <i class="fas fa-caret-right ml-3"></i></a>
 							</div>
 						</div>
 					</div>
@@ -80,20 +80,131 @@
 			
 		</header>
 		
-		<div id="page-slider" class="scrollbar scrollbar-primary w-100">
-			<div id="bg-mc" class="container d-flex justify-content-center align-items-center vh-100">
-				<div class="img-comp-container z-depth-4">
-					<div class="img-comp-img">
-						<img src="images/sliders/slider1-1.jpg" width="900" height="600">
-					</div>
-					<div class="img-comp-img img-comp-overlay">
-						<img src="images/sliders/slider1-2.png" width="900" height="600">
+		<!-- Second section -->
+		<div class="scrollbar scrollbar-young-passion">
+			<div id="page-slider">
+				
+				<div class="container d-flex justify-content-center align-items-center vh-100" id="first-slider">
+					<div class="img-comp-container z-depth-4">
+						<div class="img-comp-img">
+							<img src="images/sliders/slider1-1.jpg" width="900" height="600">
+						</div>
+						<div class="img-comp-img img-comp-overlay">
+							<img src="images/sliders/slider1-2.png" width="900" height="600">
+						</div>
 					</div>
 				</div>
+				
+				<div class="container d-flex justify-content-center align-items-center vh-100">
+					<div class="img-comp-container z-depth-4">
+						<div class="img-comp-img">
+							<img src="images/sliders/slider2-1.png" width="900" height="600">
+						</div>
+						<div class="img-comp-img img-comp-overlay">
+							<img src="images/sliders/slider2-2.png" width="900" height="600">
+						</div>
+					</div>
+				</div>
+				
+				<!-- Teams -->
+				<div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+					<h2 class="text-center mx-auto font-weight-bold mb-5 pb-2">Notre équipe</h2>
+					<div class="row">
+						<div class="col-lg-3 col-md-4 mb-3">
+							<div class="p-3">
+								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+									<img src="images/team/1.jpg" class="img-fluid rounded-circle z-depth-1" />
+								</div>
+								<div class="text-center mt-3">
+									<h6 class="font-weight-bold pt-2">Anthony JOUVERT</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 mb-3">
+							<div class="p-3">
+								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+									<img src="images/team/2.jpg" class="img-fluid rounded-circle z-depth-1" />
+								</div>
+								<div class="text-center mt-3">
+									<h6 class="font-weight-bold pt-2">Loick MEYER</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 mb-3">
+							<div class="p-3">
+								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+									<img src="images/team/3.jpg" class="img-fluid rounded-circle z-depth-1" />
+								</div>
+								<div class="text-center mt-3">
+									<h6 class="font-weight-bold pt-2">Ousmane BADIANE</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 mb-3">
+							<div class="p-3">
+								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+									<img src="images/team/4.jpg" class="img-fluid rounded-circle z-depth-1" />
+								</div>
+								<div class="text-center mt-3">
+									<h6 class="font-weight-bold pt-2">Michael RENAUDIN</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 mb-3">
+							<div class="p-3">
+								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+									<img src="images/team/5.jpg" class="img-fluid rounded-circle z-depth-1" />
+								</div>
+								<div class="text-center mt-3">
+									<h6 class="font-weight-bold pt-2">Remi MALKA</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 mb-3">
+							<div class="p-3">
+								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+									<img src="images/team/6.jpg" class="img-fluid rounded-circle z-depth-1" />
+								</div>
+								<div class="text-center mt-3">
+									<h6 class="font-weight-bold pt-2">Alan VALLIERE</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 mb-3">
+							<div class="p-3">
+								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+									<img src="images/team/7.jpg" class="img-fluid rounded-circle z-depth-1" />
+								</div>
+								<div class="text-center mt-3">
+									<h6 class="font-weight-bold pt-2">Paul-Alexandre CIESLIK</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 mb-3">
+							<div class="p-3">
+								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+									<img src="images/team/8.jpg" class="img-fluid rounded-circle z-depth-1" />
+								</div>
+								<div class="text-center mt-3">
+									<h6 class="font-weight-bold pt-2">Rosny SIMA OLLOMO</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Teams -->
+				
 			</div>
 		</div>
+		<!-- /Second section -->
 		
-		
+		<!-- ScrollToTop -->
+		<div id="div_scroll_to_top" class="position-fixed invisible">
+			<a id="btn_scroll_to_top" class="btn-floating d-flex justify-content-center align-items-center text-white" href="#first-slider" data-toggle="tooltip" data-placement="bottom" title="Retourner en haut">
+				<i class="fas fa-angle-up fa-lg"></i>
+			</a>
+		</div>
+		<!-- /ScrollToTop -->
 		
 		<!-- Mascotte JS -->
 		<script type="text/javascript" src="js/skin.js"></script>

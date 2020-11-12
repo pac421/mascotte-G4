@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	go_top();
 	initComparisons();
 });
 
@@ -9,6 +10,9 @@ $(function () {
 	$('[data-toggle="tooltip"]').tooltip()
 })
 
+/*
+ * Dual picture slider handler
+ */ 
 function initComparisons() {
   var x, i;
   /* Find all elements with an "overlay" class: */
@@ -84,4 +88,20 @@ function initComparisons() {
       slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
     }
   }
+}
+
+/*
+ * ScrollToTop button handler
+ */ 
+$('#btn-discover').click(function() {
+	$('#div_scroll_to_top').removeClass('invisible');
+});
+$('#btn_scroll_to_top').click(function() {
+	go_top();
+});
+function go_top(){
+	setTimeout(function() { 
+		scrollTo({left: 0, top: 0, behavior: 'smooth'}); 
+		$('#div_scroll_to_top').addClass('invisible');
+	}, 50);
 }
