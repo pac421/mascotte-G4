@@ -34,6 +34,7 @@ function initComparisons() {
     slider.setAttribute("class", "img-comp-slider");
     /* Insert slider */
     img.parentElement.insertBefore(slider, img);
+    $( ".img-comp-slider" ).html('<i class="fas fa-arrows-alt-h fa-lg"></i>');
     /* Position the slider in the middle: */
     slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
     slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
@@ -105,3 +106,16 @@ function go_top(){
 		$('#div_scroll_to_top').addClass('invisible');
 	}, 50);
 }
+
+/*
+ * Vidéo handler
+ */ 
+$('#play').on('click', function (e) {
+  e.preventDefault();
+  $("#player")[0].src += "?autoplay=1";
+  $('#player').show();
+  $('#video-cover').hide();
+})
+$('#modalVideo').on('hidden.bs.modal', function (e) {
+  $('#modalVideo iframe').attr("src", $("#modalVideo iframe").attr("src"));
+});

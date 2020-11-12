@@ -85,8 +85,8 @@
 			<div id="page-slider">
 				
 				<div class="d-flex justify-content-around align-items-center vh-100 w-100" id="first-slider">
-					<img src="images/static1.png" height="600">
-					<div class="img-comp-container z-depth-4">
+					<img src="images/static1.png" height="400">
+					<div class="img-comp-container z-depth-1">
 						<div class="img-comp-img">
 							<img src="images/sliders/slider1-1.jpg" width="900" height="600">
 						</div>
@@ -97,7 +97,7 @@
 				</div>
 				
 				<div class="d-flex justify-content-around align-items-center vh-100 w-100">
-					<div class="img-comp-container z-depth-4">
+					<div class="img-comp-container z-depth-1">
 						<div class="img-comp-img">
 							<img src="images/sliders/slider2-1.png" width="900" height="600">
 						</div>
@@ -105,12 +105,40 @@
 							<img src="images/sliders/slider2-2.png" width="900" height="600">
 						</div>
 					</div>
-					<img src="images/static2.png" height="600">
+					<img src="images/static2.png" height="400">
 				</div>
+				
+				<!-- Vidéo -->
+				<section class="vh-100 w-100 d-flex flex-column justify-content-center align-items-center">
+					<!-- Modal -->
+					<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+						<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+									<iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/FgkWKgL3CH8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3 class="font-weight-bold text-center dark-grey-text pb-2">Vidéo</h3>
+					<hr class="w-header my-4">
+					<p class="lead text-center text-muted pt-2 mb-5">Explorez l'institut G4 dans un monde virtuel plus vrai que nature dans le célèbre jeu Minecraft,<br>ou visualisez-en un aperçu dans cet incroyable clip !</p>
+					<div class="row">
+						<div class="mx-auto mb-4">
+							<div class="view z-depth-1 rounded">
+								<img class="rounded img-fluid" src="images/video.png" alt="Video" width="600" height="400">
+								<div class="mask flex-center">
+									<a id="play" class="btn-floating btn-lg" data-toggle="modal" data-target="#videoModal"><i class="fas fa-play"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /Vidéo -->
 				
 				<!-- Teams -->
 				<div class="container d-flex flex-column justify-content-center align-items-center vh-100">
-					<h2 class="text-center mx-auto font-weight-bold mb-5 pb-2">Notre équipe</h2>
+					<h2 class="text-center mx-auto font-weight-bold mb-4 pb-2">Notre équipe</h2>
 					<div class="row">
 						<div class="col-lg-3 col-md-4 mb-3">
 							<div class="p-3">
@@ -195,6 +223,14 @@
 					</div>
 				</div>
 				<!-- /Teams -->
+				
+				<!-- Footer -->
+				<footer class="page-footer font-small young-passion-gradient">
+					<div class="footer-copyright text-center py-3">Copyright 2020 ©
+					<a href="https://www.institut-g4.fr/" target="_blank"> institut-g4.fr</a>
+					</div>
+				</footer>
+				<!-- Footer -->
 				
 			</div>
 		</div>
