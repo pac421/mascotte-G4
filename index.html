@@ -18,231 +18,234 @@
 		<link rel="stylesheet" href="plugins/mdb/4.11.0/css/mdb.min.css">
 	</head>
 
-	<body id='body'>
-		<header id="header-div" class="vh-100">
+	<body class="scrollbar scrollbar-young-passion">
 			
-			<!--Navbar -->
-			<nav class="navbar navbar-expand-lg scrolling-navbar navbar-dark z-depth-0 fixed-top smooth-scroll">
-				<a class="navbar-brand">
-					<img src="images/logo-g4.png" alt="Logo G4">
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="https://www.institut-g4.fr/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Site web">
-								<i class="fas fa-link"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://github.com/pac421/cercle_de_projet" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github">
-								<i class="fab fa-github"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://www.facebook.com/InstitutG4/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://www.instagram.com/institut_g4/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<!-- /Navbar -->
+		<!--Navbar -->
+		<nav class="navbar navbar-expand-lg scrolling-navbar navbar-dark z-depth-0 fixed-top smooth-scroll">
+			<a class="navbar-brand">
+				<img src="images/logo-g4.png" alt="Logo G4">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.institut-g4.fr/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Site web">
+							<i class="fas fa-link"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/pac421/cercle_de_projet" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github">
+							<i class="fab fa-github"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.facebook.com/InstitutG4/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.instagram.com/institut_g4/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- /Navbar -->	
 			
-			<!-- First section -->
-			<section class="view vh-100">
-				<div class="row vh-100">
-					<div class="col-md-6">
-						<div class="d-flex flex-column justify-content-center align-items-start h-100">
-							<h1 class="heading">Voici Nova, notre nouvelle mascotte</h1>
-							<h4 class="subheading font-weight-bold">Dans le cadre des cercles de projet, le groupe n°3 a l'honneur de vous présenter la nouvelle mascotte de l'institut G4 !</h4>
-							<div class="mr-auto smooth-scroll">
-								<a type="button" class="btn btn-margin btn-rounded text-white" id="btn-discover" href="#first-slider">Découvrir <i class="fas fa-caret-right ml-3"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="view vh-100">
-							<div class="mask flex-center hm-gradient young-passion-gradient" id="model"></div>
-							<canvas id="canvas" width="64" height="64"></canvas>
+		<!-- Skin presentation -->
+		<section>
+			<div class="row vh-100">
+				<div class="col-md-6 p-0 m-0">
+					<div class="d-flex flex-column justify-content-center align-items-start h-100">
+						<h1 class="heading">Voici Nova, notre nouvelle mascotte</h1>
+						<h4 class="subheading font-weight-bold">Dans le cadre des cercles de projet, le groupe n°3 a l'honneur de vous présenter la nouvelle mascotte de l'institut G4 !</h4>
+						<div class="mr-auto smooth-scroll">
+							<a type="button" class="btn btn-margin btn-rounded text-white" id="btn-discover" href="#first-slider">Découvrir <i class="fas fa-caret-right ml-3"></i></a>
 						</div>
 					</div>
 				</div>
-			</section>
-			<!-- /First section -->
-			
-		</header>
+				<div class="col-md-6 p-0 m-0">
+					<div class="view vh-100">
+						<div class="mask flex-center hm-gradient young-passion-gradient" id="model"></div>
+						<canvas id="canvas" width="64" height="64"></canvas>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Skin presentation -->	
 		
-		<!-- Second section -->
-		<div class="scrollbar scrollbar-young-passion">
-			<div id="page-slider">
-				
-				<div class="d-flex justify-content-around align-items-center vh-100 w-100" id="first-slider">
-					<img src="images/static1.png" height="400">
-					<div class="img-comp-container z-depth-1">
-						<div class="img-comp-img">
-							<img src="images/sliders/slider1-1.jpg" width="900" height="600">
-						</div>
-						<div class="img-comp-img img-comp-overlay">
-							<img src="images/sliders/slider1-2.png" width="900" height="600">
+		<!-- Vidéo -->
+		<div class="young-passion-gradient z-depth-1 mb-5">
+			<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+							<iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/FgkWKgL3CH8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
-				
-				<div class="d-flex justify-content-around align-items-center vh-100 w-100">
-					<div class="img-comp-container z-depth-1">
-						<div class="img-comp-img">
-							<img src="images/sliders/slider2-1.png" width="900" height="600">
-						</div>
-						<div class="img-comp-img img-comp-overlay">
-							<img src="images/sliders/slider2-2.png" width="900" height="600">
-						</div>
-					</div>
-					<img src="images/static2.png" height="400">
+			</div>
+			<div class="row no-gutters">
+				<div class="col-lg-6 p-5 d-flex flex-column justify-content-center align-items-center text-white text-center">
+					<h2 class="font-weight-normal mb-4">Vidéo de présentation</h2>
+					<h5 class="mb-0">Explorez l'institut G4 à Marseille dans un monde virtuel plus vrai que nature dans le célèbre jeu Minecraft, ou visualisez-en un aperçu dans cet incroyable clip !</h5>
 				</div>
-				
-				<!-- Vidéo -->
-				<section class="vh-100 w-100 d-flex flex-column justify-content-center align-items-center">
-					<!-- Modal -->
-					<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-						<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-							<div class="modal-content">
-								<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-									<iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/FgkWKgL3CH8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-					</div>
-					<h3 class="font-weight-bold text-center dark-grey-text pb-2">Vidéo</h3>
-					<hr class="w-header my-4">
-					<p class="lead text-center text-muted pt-2 mb-5">Explorez l'institut G4 dans un monde virtuel plus vrai que nature dans le célèbre jeu Minecraft,<br>ou visualisez-en un aperçu dans cet incroyable clip !</p>
-					<div class="row">
-						<div class="mx-auto mb-4">
-							<div class="view z-depth-1 rounded">
-								<img class="rounded img-fluid" src="images/video.png" alt="Video" width="600" height="400">
-								<div class="mask flex-center">
-									<a id="play" class="btn-floating btn-lg" data-toggle="modal" data-target="#videoModal"><i class="fas fa-play"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- /Vidéo -->
-				
-				<!-- Teams -->
-				<div class="container d-flex flex-column justify-content-center align-items-center vh-100">
-					<h2 class="text-center mx-auto font-weight-bold mb-4 pb-2">Notre équipe</h2>
-					<div class="row">
-						<div class="col-lg-3 col-md-4 mb-3">
-							<div class="p-3">
-								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
-									<img src="images/team/1.jpg" class="img-fluid rounded-circle z-depth-1" />
-								</div>
-								<div class="text-center mt-3">
-									<h6 class="font-weight-bold pt-2">Anthony JOUVERT</h6>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 mb-3">
-							<div class="p-3">
-								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
-									<img src="images/team/2.jpg" class="img-fluid rounded-circle z-depth-1" />
-								</div>
-								<div class="text-center mt-3">
-									<h6 class="font-weight-bold pt-2">Loick MEYER</h6>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 mb-3">
-							<div class="p-3">
-								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
-									<img src="images/team/3.jpg" class="img-fluid rounded-circle z-depth-1" />
-								</div>
-								<div class="text-center mt-3">
-									<h6 class="font-weight-bold pt-2">Ousmane BADIANE</h6>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 mb-3">
-							<div class="p-3">
-								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
-									<img src="images/team/4.jpg" class="img-fluid rounded-circle z-depth-1" />
-								</div>
-								<div class="text-center mt-3">
-									<h6 class="font-weight-bold pt-2">Michael RENAUDIN</h6>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 mb-3">
-							<div class="p-3">
-								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
-									<img src="images/team/5.jpg" class="img-fluid rounded-circle z-depth-1" />
-								</div>
-								<div class="text-center mt-3">
-									<h6 class="font-weight-bold pt-2">Remi MALKA</h6>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 mb-3">
-							<div class="p-3">
-								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
-									<img src="images/team/6.jpg" class="img-fluid rounded-circle z-depth-1" />
-								</div>
-								<div class="text-center mt-3">
-									<h6 class="font-weight-bold pt-2">Alan VALLIERE</h6>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 mb-3">
-							<div class="p-3">
-								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
-									<img src="images/team/7.jpg" class="img-fluid rounded-circle z-depth-1" />
-								</div>
-								<div class="text-center mt-3">
-									<h6 class="font-weight-bold pt-2">Paul-Alexandre CIESLIK</h6>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 mb-3">
-							<div class="p-3">
-								<div class="avatar w-100 white d-flex justify-content-center align-items-center">
-									<img src="images/team/8.jpg" class="img-fluid rounded-circle z-depth-1" />
-								</div>
-								<div class="text-center mt-3">
-									<h6 class="font-weight-bold pt-2">Rosny SIMA OLLOMO</h6>
-								</div>
-							</div>
+				<div class="col-lg-6">
+					<div class="view">
+						<img class="img-fluid" src="images/video.png" alt="Video de présentation">
+						<div class="mask flex-center">
+							<a id="play" class="btn-floating btn-lg" data-toggle="modal" data-target="#videoModal"><i class="fas fa-play"></i></a>
 						</div>
 					</div>
 				</div>
-				<!-- /Teams -->
-				
-				<!-- Footer -->
-				<footer class="page-footer font-small young-passion-gradient">
-					<div class="footer-copyright text-center py-3">Copyright 2020 ©
-					<a href="https://www.institut-g4.fr/" target="_blank"> institut-g4.fr</a>
-					</div>
-				</footer>
-				<!-- Footer -->
 				
 			</div>
 		</div>
-		<!-- /Second section -->
+		<!-- /Vidéo -->
 		
-		<!-- ScrollToTop -->
+		<!-- Picture comparison -->
+		<div class="d-flex flex-column justify-content-center align-items-center mb-5">
+			<div class="d-flex justify-content-center align-items-center">
+				<img class="mr-5" src="images/static1.png" height="200">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item"><b>Version de Minecraft (requis):</b> 1.12.2</li>
+					<li class="list-group-item"><b>IP du serveur:</b> 62.210.47.4:25741</li>
+					<li class="list-group-item"><b>Pack de texture (facultatif):</b> Soartex Fanver ou Slidurs Vibrant</li>
+					<li class="list-group-item"><b>Mod (facultatif):</b> Optifine 1.12.2</li>
+				</ul>
+				<img class="ml-5" src="images/static2.png" height="200">
+			</div>
+			<div class="d-flex justify-content-center align-items-center border-bottom">
+				<div class="m-5">
+					<div class="img-comp-container z-depth-1">
+						<div class="img-comp-img">
+							<img src="images/sliders/slider1-1.jpg" width="600" height="400">
+						</div>
+						<div class="img-comp-img img-comp-overlay">
+							<img src="images/sliders/slider1-2.png" width="600" height="400">
+						</div>
+					</div>
+				</div>
+				<div class="m-5">
+					<div class="img-comp-container z-depth-1">
+						<div class="img-comp-img">
+							<img src="images/sliders/slider2-1.png" width="600" height="400">
+						</div>
+						<div class="img-comp-img img-comp-overlay">
+							<img src="images/sliders/slider2-2.png" width="600" height="400">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Picture comparison -->
+		
+		<!-- Teams -->
+		<div class="container d-flex flex-column justify-content-center align-items-center">
+			<h2 class="text-center font-weight-bold mb-3">Notre équipe</h2>
+			<div class="row">
+				<div class="col-lg-3 col-md-4 mb-3">
+					<div class="p-3">
+						<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+							<img src="images/team/1.jpg" class="img-fluid rounded-circle z-depth-1" />
+						</div>
+						<div class="text-center mt-3">
+							<h6 class="font-weight-bold pt-2">Anthony JOUVERT</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 mb-3">
+					<div class="p-3">
+						<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+							<img src="images/team/2.jpg" class="img-fluid rounded-circle z-depth-1" />
+						</div>
+						<div class="text-center mt-3">
+							<h6 class="font-weight-bold pt-2">Loick MEYER</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 mb-3">
+					<div class="p-3">
+						<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+							<img src="images/team/3.jpg" class="img-fluid rounded-circle z-depth-1" />
+						</div>
+						<div class="text-center mt-3">
+							<h6 class="font-weight-bold pt-2">Ousmane BADIANE</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 mb-3">
+					<div class="p-3">
+						<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+							<img src="images/team/4.jpg" class="img-fluid rounded-circle z-depth-1" />
+						</div>
+						<div class="text-center mt-3">
+							<h6 class="font-weight-bold pt-2">Michael RENAUDIN</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 mb-3">
+					<div class="p-3">
+						<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+							<img src="images/team/5.jpg" class="img-fluid rounded-circle z-depth-1" />
+						</div>
+						<div class="text-center mt-3">
+							<h6 class="font-weight-bold pt-2">Remi MALKA</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 mb-3">
+					<div class="p-3">
+						<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+							<img src="images/team/6.jpg" class="img-fluid rounded-circle z-depth-1" />
+						</div>
+						<div class="text-center mt-3">
+							<h6 class="font-weight-bold pt-2">Alan VALLIERE</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 mb-3">
+					<div class="p-3">
+						<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+							<img src="images/team/7.jpg" class="img-fluid rounded-circle z-depth-1" />
+						</div>
+						<div class="text-center mt-3">
+							<h6 class="font-weight-bold pt-2">Paul-Alexandre CIESLIK</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 mb-3">
+					<div class="p-3">
+						<div class="avatar w-100 white d-flex justify-content-center align-items-center">
+							<img src="images/team/8.jpg" class="img-fluid rounded-circle z-depth-1" />
+						</div>
+						<div class="text-center mt-3">
+							<h6 class="font-weight-bold pt-2">Rosny SIMA OLLOMO</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Teams -->
+		
+		<!-- Footer -->
+		<footer class="page-footer font-small young-passion-gradient mt-4">
+			<div class="footer-copyright text-center py-4">Copyright 2020 ©
+			<a href="https://www.institut-g4.fr/" target="_blank"> institut-g4.fr</a>
+			</div>
+		</footer>
+		<!-- Footer -->
+		
+		<!-- ScrollToTop button -->
 		<div id="div_scroll_to_top" class="position-fixed invisible">
-			<a id="btn_scroll_to_top" class="btn-floating d-flex justify-content-center align-items-center text-white" href="#first-slider" data-toggle="tooltip" data-placement="bottom" title="Retourner en haut">
+			<a id="btn_scroll_to_top" class="btn-floating d-flex justify-content-center align-items-center text-white" data-toggle="tooltip" data-placement="bottom" title="Retourner en haut">
 				<i class="fas fa-angle-up fa-lg"></i>
 			</a>
 		</div>
-		<!-- /ScrollToTop -->
+		<!-- /ScrollToTop button -->
 		
 		<!-- Mascotte JS -->
 		<script type="text/javascript" src="js/skin.js"></script>

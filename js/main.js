@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	go_top();
 	initComparisons();
 });
 
@@ -94,18 +93,19 @@ function initComparisons() {
 /*
  * ScrollToTop button handler
  */ 
-$('#btn-discover').click(function() {
-	$('#div_scroll_to_top').removeClass('invisible');
-});
+var body = $("html, body");
 $('#btn_scroll_to_top').click(function() {
-	go_top();
+	body.stop().animate({scrollTop:0}, 500, 'swing');
 });
-function go_top(){
-	setTimeout(function() { 
-		scrollTo({left: 0, top: 0, behavior: 'smooth'}); 
+body.scroll(function() {
+	if($(this).scrollTop() > 0) {
+		if($("#div_scroll_to_top").hasClass("invisible")){
+			$('#div_scroll_to_top').removeClass('invisible');
+		}
+	} else {
 		$('#div_scroll_to_top').addClass('invisible');
-	}, 50);
-}
+	}
+});
 
 /*
  * Vidéo handler
