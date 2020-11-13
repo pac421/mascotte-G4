@@ -68,7 +68,7 @@ img.onerror = function() {
 }
 
 // I use crafatar because it allows CORS requests.
-img.src = 'http://crafatar.com/skins/2b254a2d-3b59-4605-9bfc-f4c7ca5207df';
+img.src = 'https://crafatar.com/skins/2b254a2d-3b59-4605-9bfc-f4c7ca5207df';
 
 function RenderSkin() {
   // Head Parts
