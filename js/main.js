@@ -93,11 +93,10 @@ function initComparisons() {
 /*
  * ScrollToTop button handler
  */ 
-var body = $("html, body");
 $('#btn_scroll_to_top').click(function() {
-	body.stop().animate({scrollTop:0}, 500, 'swing');
+	$("html, body").stop().animate({scrollTop:0}, 500, 'swing');
 });
-body.scroll(function() {
+$(window).scroll(function() {
 	if($(this).scrollTop() > 0) {
 		if($("#div_scroll_to_top").hasClass("invisible")){
 			$('#div_scroll_to_top').removeClass('invisible');
